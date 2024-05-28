@@ -21,8 +21,8 @@ export class TeamMemberController {
         return this.teamMemberService.update(id, updateTeamMemberDto);
     }
 
-    // @Delete(':id')
-    // async delete(@Param('id') id: string) {
-    //     return this.teamMemberService.delete(id);
-    // }
+    @Delete(':id')
+    async delete(@Param('id') id: string) {
+        return this.teamMemberService.delete(id);
+    }
 }

@@ -20,7 +20,7 @@ export class TeamMemberService {
         return this.teamMemberModel.findByIdAndUpdate(id, updateTeamMemberDto, { new: true }).exec();
     }
 
-    // async delete(id: string): Promise<any> {
-    //     return this.teamMemberModel.findByIdAndRemove(id).exec();
-    // }
+    async delete(id: string): Promise<any> {
+        return this.teamMemberModel.findByIdAndDelete(id).exec();
+    }
 }
