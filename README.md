@@ -24,7 +24,7 @@ Use the following curl commands to test the API:
 - Add a new team member:
 
   ```
-  curl -X POST -H "Content-Type: application/json" -d '{"firstName": "David", "lastName": "Jones", "phone": "+15101234567", "email": "test@test.com", "role": "user"}' http://localhost:3000/team-members
+  curl -X POST -H "Content-Type: application/json" -d '{"firstName": "Tom", "lastName": "Cruise", "phone": "43434", "email": "tomcruise@fmail.com", "role": "user"}' http://localhost:3000/team-members
   ```
 - Edit a team member:
     ```
